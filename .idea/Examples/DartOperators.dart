@@ -39,7 +39,7 @@ main(List<String> arguments) {
   * AND(&&) expression is true if both sides are true
   */
 
-  if(!(num1!=100)|| num1 <=100){ //false or true
+  if(!(num1!=100)|| num1 <=100){ //false OR true= true
     print("Not a hundred");
   }
   else {
@@ -47,7 +47,14 @@ main(List<String> arguments) {
   }
 
 
-  if(!(num1!=100) && num1 <=100){ //false or true result is  false
+  if(!(num1!=100) && num1 <=100){ //false AND true result is  false
+    print("Not a hundred");
+  }
+  else {
+    print("yes it may be hundred");
+  }
+
+  if(!(num1!=100)){
     print("Not a hundred");
   }
   else {
