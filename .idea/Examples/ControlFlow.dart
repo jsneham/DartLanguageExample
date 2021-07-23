@@ -5,9 +5,7 @@ main(List<String> arguments) {
   if(num1!=32)
     print("run this if true");
 
-  if(num1==34)
-    print("run this if true");
-  else
-    print("its false");
+  if(num1==34) print("run this if true");
+  else print("its false");
 
 }
