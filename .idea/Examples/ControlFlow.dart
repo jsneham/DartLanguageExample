@@ -15,6 +15,39 @@ main(List<String> arguments) {
     if(i%2==0) print("Hello $i");
   }
 
-  //While
+  //while and do while
+  
+  while(true){  //infinite loop
+    print("Working.....");
+
+    break; // stop going to infinite
+  }
+
+  while(num1>23){  //infinite loop
+   if(num1 >32 ) print("Going...");
+    break;
+
+  }
+
+  do{
+    print("Hello World!");
+  } while(num1<34);
+
+
+  //Switch case
+  var age =18;
+switch(age){
+  case 19:
+    print("19");
+    break;
+  case 20:
+    print("20");
+    break;
+  case 18:
+    print("18");
+    break;
+  default:
+    print("$age");
+}
 
 }
