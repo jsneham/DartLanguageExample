@@ -9,6 +9,7 @@ main(List<String> arguments) {
   print("Hello, ${showName()} ${showAge()} ${isKnow()}");
   print("Hello, ${getName()}");
   print(sayHello("James B"));
+ // print(optionalParameter("James", "Bond"));
 
 
 }
@@ -18,23 +19,19 @@ doSomething(){
   print("Hello Functions!");
   sayMyName();
 }
-
 sayMyName(){
   print("Sne");
   var name="Sne";
   if(name.contains("S")) print("yes");
   else print("ney");
 }
-
 /*end Simple functions*/
 
 
 /* return type String-Int-Boolean*/
-
 String showName(){
   return "Hello from ShowName!";
 }
-
 int showAge(){
   return 27;
 }
@@ -43,15 +40,27 @@ bool isKnow(){
   if(age>30) return true;
   else return false;
 }
-
 /* end return type String-Int-Boolean*/
 
 
 // using => Operator for Returning Expression
-
 String getName()=> "James Bond";
 
 //Arguments and function in dart
-
 String sayHello(String name)=> "Hello $name";
+
+
+//Optional Parameter []- optional parameter
+String optionalParameter(String name, String lastName, [int age]){
+  var finalResult= "Hello $name $lastName";
+  if(age==null){
+    finalResult= "$finalResult doesn't want to tell their age";
+  }
+  return finalResult;
+}
+
+
+
+
+
 
