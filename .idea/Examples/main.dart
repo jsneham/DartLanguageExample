@@ -4,10 +4,11 @@ main(List<String> arguments) {
   //Variable= spot in memory. or just a bucket to hold value.value that can vary
   /*Type??
       String
-      Numbers
+      Numbers (int, double)
       booleand- 1 or 0  /  true or false
-      lists
-      maps
+      lists (List, also known as arrays)
+      Sets (Set)
+      Maps (Map)
       ..
 
       integers= 1,2,3,55, etc
@@ -22,8 +23,11 @@ main(List<String> arguments) {
   name = "Sneha";
   print(name);
 
-  /* num age=27;
-  num number=23;*/
+/*
+  num can have both int and double values
+*/
+  num num1=27;
+  num num2=23.5;
 
   int age = 27;
   double number = 23.5;
@@ -44,19 +48,16 @@ main(List<String> arguments) {
   const pi = 3.14;
   // pi=5.0; this will give you error at compile time
 
-  final rad= 5.85;
+  final rad = 5.85;
   // rad= 5.3;  Can't assign to the final variable 'rad'.
 
-
   /* Concatenation */
-  String firstName=  "Momo";
-  String lastName=  "Hirai";
-  int herAge=24;
+  String firstName = "Momo";
+  String lastName = "Hirai";
+  int herAge = 24;
 
   print(firstName);
   print("$firstName $lastName is $herAge");
   print("Hello there $firstName $lastName");
   print("Hello there $firstName ${lastName.toUpperCase()}");
-
-
 }
