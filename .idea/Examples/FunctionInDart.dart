@@ -7,6 +7,9 @@ main(List<String> arguments) {
   // var name= showName();
   // print(name);
   print("Hello, ${showName()} ${showAge()} ${isKnow()}");
+  print("Hello, ${getName()}");
+  print(sayHello("James B"));
+
 
 }
 
@@ -42,3 +45,13 @@ bool isKnow(){
 }
 
 /* end return type String-Int-Boolean*/
+
+
+// using => Operator for Returning Expression
+
+String getName()=> "James Bond";
+
+//Arguments and function in dart
+
+String sayHello(String name)=> "Hello $name";
+
