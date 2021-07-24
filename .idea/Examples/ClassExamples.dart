@@ -1,34 +1,38 @@
-
 class Microphone {
-
   //Instance variable, member variables
-  String name="";
-  String color="";
-  int model=0;
+  String name = "";
+  String color = "";
+  int model = 0;
 
   //Methods
-  void turnOn(){
+  void turnOn() {
     print("$name is turn on!");
   }
-  void turnOff(){
+
+  void turnOff() {
     print("$name is turn off!");
   }
 
-  void setVolume(){
+  void setVolume() {
     print("$name with color: $color volume is up!");
   }
 
+  bool isOn() => true;
+
+  int modelNumber() => model;
 }
 
-  main(List<String> arguments){
-    var mic= new Microphone(); // creating object of Class Micropone
-    mic.name= "Blue Yeti";
-    mic.color= "Black";
-    mic.model= 1023;
-    
-    print(mic.name); //(DOT ) access operataot
+main(List<String> arguments) {
+  var mic = new Microphone(); // creating object of Class Micropone
+  mic.name = "Blue Yeti";
+  mic.color = "Black";
+  mic.model = 1023;
 
-    mic.turnOn();
-    mic.setVolume();
-    mic.turnOff();
-  }
+  print(mic.name); //(DOT ) access operataot
+
+  mic.turnOn();
+  mic.setVolume();
+  mic.turnOff();
+  print(mic.isOn());
+  print(mic.modelNumber());
+}
