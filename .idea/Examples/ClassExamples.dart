@@ -4,6 +4,8 @@ class Microphone {
   String color = "";
   int model = 0;
 
+
+
   //Methods
   void turnOn() {
     print("$name is turn on!");
