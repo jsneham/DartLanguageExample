@@ -5,6 +5,10 @@ class Person{
   void showName(){
     print(this.name);
   }
+
+  void sayHello(){
+    print("Hello!")
+  }
 }
 
 class Bonni extends Person{
